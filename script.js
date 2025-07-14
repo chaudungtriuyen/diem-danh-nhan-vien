@@ -1,4 +1,4 @@
-const API_URL = "PASTE_YOUR_APPS_SCRIPT_URL_HERE";
+const API_URL = "https://script.google.com/u/0/home/projects/1suxbQhXB49XawxJGycG9hPMMHg_oadmpGsR7HPvtWEtLMVxIMg2iBW62/edit";
 let currentLeader = "";
 
 function dangNhap() {

@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/u/0/home/projects/1suxbQhXB49XawxJGycG9hPMMHg_oadmpGsR7HPvtWEtLMVxIMg2iBW62/edit";
+const API_URL = "https://script.google.com/macros/s/AKfycbwS1gT1NXNdP_-QasezRjQ-db0ez3CenXYgjm5chQFeVHjOvmjYrCAnbP5UqmwVCd655Q/exec";
 let currentLeader = "";
 
 function dangNhap() {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Điểm danh nhân viên</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Leader Đăng Nhập</h2>
+    <input id="leaderId" type="text" placeholder="Leader ID">
+    <input id="leaderPass" type="password" placeholder="Mật khẩu">
+    <button onclick="dangNhap()">Đăng nhập</button>
+
+    <div id="app" hidden>
+      <h3>Điểm danh nhân viên</h3>
+      <input id="employeeId" type="text" placeholder="ID nhân viên">
+      <button onclick="diemDanh()">Điểm danh</button>
+      <p id="diemDanhResult"></p>
+
+      <h3>Lịch sử điểm danh</h3>
+      <input id="filterDate" type="date">
+      <button onclick="locLichSu()">Lọc</button>
+      <button onclick="xuatCSV()">Xuất CSV</button>
+      <table id="lichSuTable">
+        <thead><tr><th>Thời gian</th><th>ID nhân viên</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <canvas id="chartCanvas" height="150"></canvas>
+
+      <h3>Đổi mật khẩu</h3>
+      <input id="oldPass" type="password" placeholder="Mật khẩu cũ">
+      <input id="newPass" type="password" placeholder="Mật khẩu mới">
+      <button onclick="doiMatKhau()">Đổi mật khẩu</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
